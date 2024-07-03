@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+
+            $("#news").click(function () {
+                $("#news").hide(1000);
+                $("#home").show(1000);
+                $("#info").css({"background-color":"yellow","font-size":"30px"});
+                $(".image").hide();
+                $("#info").slideDown(1000);
+            });
+
+            $("#home").click(function () {
+                $("#news").show(1000);
+                $("#home").hide(1000);
+                $(".image").slideDown(1000);
+                $("#info").hide();
+
+
+            });
+
+
+
+        });
+    </script>
+</head>
+
+<style>
+    nav {
+        list-style: none;
+        display: flex;
+        background-color: rgb(230, 146, 20);
+    }
+
+    li {
+        padding: 20px;
+        color: antiquewhite;
+    }
+
+    section {
+        text-align: center;
+        background-color: aqua;
+        padding: 10PX;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+
+    img {
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+        display: none;
+        align-items: center;
+    }
+
+    #info {
+        display: none;
+
+    }
+</style>
+
+<body>
+    <nav>
+        <li><a href="#home" class="home" id="home">Home</a></li>
+        <li><a href="#news" clas="hide" id="news">News</a></li>
+        <li><a href="#" clas="hide">Contactus</a></li>
+        <li><a href="" clas="hide">About</a></li>
+    </nav>
+
+    <section> Team India</section>
+
+    <p id="info">The India men's national cricket team represents India in men's international cricket. It is governed by the Board of Control for Cricket in India (BCCI), and is a Full Member of the International Cricket Council (ICC) with Test, One Day International (ODI) and Twenty20 International (T20I) status.The team played its first international match on 25 June 1932 in a Test against England at Lord's Cricket Ground in London, becoming the sixth team to be granted Test cricket status. India's first Test victory was in 1952.</p>
+
+    <img src="ind.png" alt="" class="image">
+
+</body>
+
+</html>

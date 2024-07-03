@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        nav {
+            background-color: rgb(42, 54, 50);
+            color: white;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        nav ul li a:hover {
+            background-color: rgb(233, 138, 75);
+            text-decoration: none;
+        }
+
+        .dropdown {
+            display: inline-block;
+        }
+
+        .dropdowncontent {
+            display: none;
+            position: absolute;
+            background-color: antiquewhite;
+            min-width: 150px;
+            box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 2);
+            z-index: 1;
+        }
+
+        .dropdowncontent a {
+            color: black;
+            padding: 12px 15px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdowncontent a:hover {
+            background-color: rgb(210, 233, 128);
+        }
+
+        .dropdown:hover .dropdowncontent {
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
+        section {
+            background-image: url(s.png.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 39vw;
+            width: 197vh;
+
+        }
+
+        section p {
+            padding: 10px;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to my site</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li class="dropdown">
+                <a href="#">Dropdown</a>
+                <div class="dropdowncontent">
+                    <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover"
+                        target="_blank">Link 1</a>
+                    <a href="https://www.google.com/search?q=google.com&rlz=1C1CHZN_en-GBIN1099IN1099&oq=google.com&gs_lcrp=EgZjaHJvbWUyBggAEEUYPDIGCAEQRRg5MgcIAhAAGI8CMgYIAxBFGDwyBggEEAUYQDIGCAUQRRg8MgYIBhAFGCwyBggHEAUYLNIBCDczNDRqMGo3qAIIsAIB&sourceid=chrome&ie=UTF-8"
+                        target="_blank">Link 2</a>
+                    <a href="video.mp4" target="_blank">Link 3</a>
+                    <li><a href="form.html" target="_blank">Registration</a></li>
+                    <li><a href="login.html" target="_blank">Login</a></li>
+                </div>
+            </li>
+
+
+        </ul>
+    </nav>
+
+    <section>
+        <p>This is a first paragraph</p>
+        <p>This is a second paragraph</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum possimus magnam fuga blanditiis mollitia enim esse delectus dicta distinctio totam labore accusamus cupiditate reprehenderit autem at animi molestiae, vitae dolor quae optio, quia odio modi consectetur. Nemo, ad incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea labore itaque, quod animi recusandae deleniti quos vel nostrum dolorem!</p>
+
+    </section>
+
+    <footer> &copy; Day2 All rights reserved</footer>
+</body>
+
+</html>

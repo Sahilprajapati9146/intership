@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Navbar Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<!-- <style>
+    body {
+        background-image: url(pexels.jpg);
+
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+</style> -->
+
+
+
+<nav class="bg-gray-800 p-4">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center">
+            <div class="flex space-x-4">
+                <a class="text-red-400 text-2xl">Car<span class="text-white">Wale</span></a>
+            </div>
+            <div class="flex items-center space-x-4 uppercase">
+                <a href="#" class="text-gray-300 hover:text-white hover:bg-red-600 hover:rounded-sm">Home</a>
+                <a href="#" class="text-gray-300 hover:text-white hover:bg-red-600">About</a>
+                <a href="#" class="text-gray-300 hover:text-white hover:bg-red-600">Services</a>
+                <a href="#" class="text-gray-300 hover:text-white hover:bg-red-600">Contact</a>
+                <!-- <a href="#" class="text-gray-300 hover:text-white hover:bg-red-600 font-mono">Login</a> -->
+                <button class="bg-white border-red-500 border-2 hover:border-red-700 rounded-full text-red-500 hover:text-red-700 font-bold py-2 px-4">
+                    Login
+                  </button>
+            </div>
+        </div>
+    </div>
+</nav><br><br>
+    <main class="flex w-full h-screen ">
+        <img src="pexels.jpg" alt="">
+        <div class="flex justify-center bg-black bg-opacity-80 rounded-lg">
+            <div class="flex justify-center">
+                <h1 class="font-bold text-6xl text-white m-7 text-center">Welcome to <span class="text-red">CarWale</span></h1>
+            </div>
+            <div>
+                <p class="text-white text-xl m-5 p-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, laborum?</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-black h-[100%] w-[100%] ">
+        <h2 class="text-2xl font-bold text-white  text-center p-10 ">About Cars</h2>
+        <div class="grid grid-cols-4 gap-40">
+            <div class="image-container">
+                <img src="bmw.png" alt="Car 1" id="car1" class="w-30 h-auto object-cover rounded">
+                <p id="car1-text" class="text-white text-xl mt-2 opacity-0 transition duration-300 ease-in-out">BMW Description</p>
+            </div>
+            <div class="image-container">
+                <img src="mer.png" alt="Car 2" id="car2" class="w-30 h-auto object-cover rounded">
+                <p id="car2-text" class="text-white text-xl mt-2 opacity-0 transition duration-300 ease-in-out">Mercedes Description</p>
+            </div>
+            <div class="image-container">
+                <img src="porsche.png" alt="Car 3" id="car3" class="w-30 h-auto object-cover rounded">
+                <p id="car3-text" class="text-white text-xl mt-2 opacity-0 transition duration-300 ease-in-out">Porsche Description</p>
+            </div>
+            <div class="image-container">
+                <img src="fort.png" alt="Car 4" id="car4" class="w-30 h-auto object-cover rounded">
+                <p id="car4-text" class="text-white text-xl mt-2 opacity-0 transition duration-300 ease-in-out">Toyota Description</p>
+            </div>
+           
+           
+        </div>
+    </footer>
+    
+</body>
+
+</html>
