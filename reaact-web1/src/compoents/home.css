@@ -1,0 +1,58 @@
+/* Home.css */
+.home-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .home-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .home-container p {
+    margin-bottom: 20px;
+  }
+  
+  .btn-cta {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-cta:hover {
+    background-color: #3e8e41;
+  }
+  
+  .home-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .feature {
+    width: 30%;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .feature i {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .feature h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    font-size: 14px;
+    color: #666;
+  }
